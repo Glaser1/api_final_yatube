@@ -47,33 +47,50 @@ python manage.py runserver
 ```
 GET /api/v1/posts/
 
-Response samples
+Response:
 {
-"count": 123,
-"next": "http://api.example.org/accounts/?offset=400&limit=100",
-"previous": "http://api.example.org/accounts/?offset=200&limit=100",
-"results": [
-{}
- ]
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+    {}
+   ]
 }
 
 POST /api/v1/posts/
 
-Response samples
+Response:
 {
-"text": "string",
-"image": "string",
-"group": 0
+ "text": "string",
+ "image": "string",
+ "group": 0
 }
 
-Request samples
+Request:
 {
-"id": 0,
-"author": "string",
-"text": "string",
+ "id": 0,
+ "author": "string",
+ "text": "string",
 "pub_date": "2019-08-24T14:15:22Z",
-"image": "string",
-"group": 0
+ "image": "string",
+ "group": 0
 }
-```
 
+GET /api/v1/follow/
+
+Response:
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
+
+POST /api/v1/follow/
+
+Response:
+
+{
+  "user": "string",
+  "following": "string"
+}
