@@ -46,8 +46,7 @@ python manage.py runserver
 
 ```
 GET /api/v1/posts/
-```
-```
+
 Response samples
 {
 "count": 123,
@@ -58,3 +57,21 @@ Response samples
  ]
 }
 ```
+```
+POST /api/v1/posts/
+
+Response samples
+{
+"text": "string",
+"image": "string",
+"group": 0
+}
+Request samples
+{
+"id": 0,
+"author": "string",
+"text": "string",
+"pub_date": "2019-08-24T14:15:22Z",
+"image": "string",
+"group": 0
+}
