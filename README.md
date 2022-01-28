@@ -41,3 +41,20 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+
+Примеры запросов к API:
+
+```
+GET /api/v1/posts/
+```
+```
+Response samples
+{
+"count": 123,
+"next": "http://api.example.org/accounts/?offset=400&limit=100",
+"previous": "http://api.example.org/accounts/?offset=200&limit=100",
+"results": [
+{}
+]
+}
+```
