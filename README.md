@@ -56,8 +56,7 @@ Response samples
 {}
  ]
 }
-```
-```
+
 POST /api/v1/posts/
 
 Response samples
@@ -66,6 +65,7 @@ Response samples
 "image": "string",
 "group": 0
 }
+
 Request samples
 {
 "id": 0,
@@ -75,3 +75,5 @@ Request samples
 "image": "string",
 "group": 0
 }
+```
+
