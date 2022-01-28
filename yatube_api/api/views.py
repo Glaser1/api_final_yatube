@@ -5,7 +5,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from django.shortcuts import get_object_or_404
 
 from api.permissions import IsAuthorOrReadOnly
-from posts.models import Post, Group, Follow
+from posts.models import Post, Group
 from api.serializers import (PostSerializer, GroupSerializer,
                              CommentSerializer,
                              FollowSerializer
