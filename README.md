@@ -55,6 +55,6 @@ Response samples
 "previous": "http://api.example.org/accounts/?offset=200&limit=100",
 "results": [
 {}
-]
+ ]
 }
 ```
