@@ -88,8 +88,12 @@ Response:
 
 POST /api/v1/follow/
 
-Response:
+Request:
+{
+  "following": "string
+}
 
+Response:
 {
   "user": "string",
   "following": "string"
