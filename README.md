@@ -1,33 +1,104 @@
-<<<<<<< HEAD
-Как запустить проект: Клонировать репозиторий и перейти в него в командной строке:
+### Описание: 
+  Перед вами - REST API для Yatube (https://github.com/Glaser1/hw05_final) - социальной сети для публикации личных дневников.
+ 
 
-git clone https://github.com/yandex-praktikum/kittygram.git cd kittygram Cоздать и активировать виртуальное окружение:
+### Как запустить проект:
 
-python3 -m venv env source env/bin/activate Установить зависимости из файла requirements.txt:
-
-python3 -m pip install --upgrade pip pip install -r requirements.txt Выполнить миграции:
-
-python3 manage.py migrate Запустить проект:
-
-python3 manage.py runserver
-=======
-Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 
-git clone https://github.com/yandex-praktikum/kittygram.git
-cd kittygram
+```
+git clone https://github.com/yandex-praktikum/api_final_yatube.git
+```
+
+```
+cd api_final_yatube
+```
+
 Cоздать и активировать виртуальное окружение:
 
-python3 -m venv env
-source env/bin/activate
+```
+python -m venv venv
+```
+
+```
+source venv/scripts/activate
+```
+
 Установить зависимости из файла requirements.txt:
 
+```
 python3 -m pip install --upgrade pip
+```
+
+```
 pip install -r requirements.txt
+```
+
 Выполнить миграции:
 
-python3 manage.py migrate
+```
+python manage.py migrate
+```
+
 Запустить проект:
 
-python3 manage.py runserver
->>>>>>> 9c4e8b1c920508c8072bf698d7eb3f9ad0a82f70
+```
+python manage.py runserver
+```
+
+### Примеры запросов к API:
+
+```
+GET /api/v1/posts/
+
+Response:
+{
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+    {}
+   ]
+}
+
+POST /api/v1/posts/
+
+Response:
+{
+ "text": "string",
+ "image": "string",
+ "group": 0
+}
+
+Request:
+{
+ "id": 0,
+ "author": "string",
+ "text": "string",
+"pub_date": "2019-08-24T14:15:22Z",
+ "image": "string",
+ "group": 0
+}
+
+GET /api/v1/follow/
+
+Response:
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
+
+POST /api/v1/follow/
+
+Request:
+{
+  "following": "string
+}
+
+Response:
+{
+  "user": "string",
+  "following": "string"
+}
