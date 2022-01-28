@@ -42,7 +42,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-###Примеры запросов к API:
+### Примеры запросов к API:
 
 ```
 GET /api/v1/posts/
