@@ -1,4 +1,4 @@
-### api_yatube
+# api_yatube
 
 Перед вами REST API для Yatube (https://github.com/Glaser1/yatube) - социальной сети для публикации личных дневников.
 
